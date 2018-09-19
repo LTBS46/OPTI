@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependenciesRoot>
+  <dependency className="OPTI.Language" file="Language.java">
+    <classNode dependClassName="OPTI.actions.ActionAspectDescriptorImpl" />
+    <classNode dependClassName="OPTI.behavior.BehaviorAspectDescriptor" />
+    <classNode dependClassName="OPTI.constraints.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="OPTI.dataFlow.DataFlowAspectDescriptorImpl" />
+    <classNode dependClassName="OPTI.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="OPTI.findUsages.FindUsagesDescriptor" />
+    <classNode dependClassName="OPTI.migration.MigrationDescriptor" />
+    <classNode dependClassName="OPTI.refactorings.RefactoringAspectDescriptor" />
+    <classNode dependClassName="OPTI.scripts.ScriptsDescriptor" />
+    <classNode dependClassName="OPTI.structure.ConceptPresentationAspectImpl" />
+    <classNode dependClassName="OPTI.structure.StructureAspectDescriptor" />
+    <classNode dependClassName="OPTI.textGen.TextGenAspectDescriptor" />
+    <classNode dependClassName="OPTI.typesystem.TypesystemDescriptor" />
+    <classNode dependClassName="OPTI.vcs.VCSDescriptor" />
+    <classNode dependClassName="java.lang.Class" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.lang.dataFlow.framework.DataFlowAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.migration.runtime.base.MigrationAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.script.runtime.ScriptAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.refactoring.runtime.RefactoringAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.FindUsageAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.vcs.mergehints.runtime.VCSAspectDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SLanguage" />
+    <classNode extendsClassName="jetbrains.mps.smodel.language.LanguageRuntime" />
+  </dependency>
+</dependenciesRoot>
+

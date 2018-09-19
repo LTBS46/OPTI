@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="RefactoringAspectDescriptor.java">
+      <unit at="11,0,24,0" name="OPTI.refactorings.RefactoringAspectDescriptor" />
+    </file>
+  </root>
+</debug-info>
+
