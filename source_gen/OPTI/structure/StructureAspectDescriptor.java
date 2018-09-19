@@ -44,7 +44,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForInput_field() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("OPTI", "Input_field", 0x3173a0e936cc43a5L, 0xbf9917355f5ea8a0L, 0x1e34e6e4a1df22bfL);
-    b.class_(false, false, true);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:37605e4a-8ebb-40b7-b1bc-5f28ab482ac1(OPTI.structure)/2176618389569479359");
     b.version(2);
@@ -52,14 +52,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForMAIN() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("OPTI", "MAIN", 0x3173a0e936cc43a5L, 0xbf9917355f5ea8a0L, 0x1e34e6e4a1ded274L);
-    b.class_(true, false, true);
+    b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:37605e4a-8ebb-40b7-b1bc-5f28ab482ac1(OPTI.structure)/2176618389569458804");
     b.version(2);
-    b.prop("Named", 0x599b1dd3d5b7d9f9L, "6456787286426638841");
     b.prop("P_type", 0x599b1dd3d5b7da04L, "6456787286426638852");
-    b.prop("A", 0x599b1dd3d5b8c86fL, "6456787286426699887");
-    b.aggregate("INPUT_1", 0x599b1dd3d5b7da0dL).target(0x3173a0e936cc43a5L, 0xbf9917355f5ea8a0L, 0x1e34e6e4a1df22bfL).optional(true).ordered(true).multiple(false).origin("6456787286426638861").done();
+    b.aggregate("INPUT_1", 0x599b1dd3d5b7da0dL).target(0x3173a0e936cc43a5L, 0xbf9917355f5ea8a0L, 0x1e34e6e4a1df22bfL).optional(true).ordered(true).multiple(true).origin("6456787286426638861").done();
     return b.create();
   }
 }
