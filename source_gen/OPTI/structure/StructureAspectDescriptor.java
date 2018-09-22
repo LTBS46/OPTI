@@ -10,6 +10,8 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.runtime.ConceptKind;
+import jetbrains.mps.smodel.runtime.StaticScope;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptInput_field = createDescriptorForInput_field();
@@ -48,16 +50,26 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:37605e4a-8ebb-40b7-b1bc-5f28ab482ac1(OPTI.structure)/2176618389569479359");
     b.version(2);
+    b.alias("1");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMAIN() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("OPTI", "MAIN", 0x3173a0e936cc43a5L, 0xbf9917355f5ea8a0L, 0x1e34e6e4a1ded274L);
     b.class_(false, false, true);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x12509ddfaa98f128L);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x62763dc803b97bd8L);
+    b.parent(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x11d2ea63881L);
+    b.parent(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0x6d1df6c2700b0eaeL);
     b.origin("r:37605e4a-8ebb-40b7-b1bc-5f28ab482ac1(OPTI.structure)/2176618389569458804");
     b.version(2);
+    b.prop("rootable", 0x69286d3b9c84a7a5L, "7577426475847296933");
     b.prop("P_type", 0x599b1dd3d5b7da04L, "6456787286426638852");
+    b.prop("iconpath", 0x69286d3b9c84a7a8L, "7577426475847296936");
+    b.associate("extends", 0x110356fe029L).target(0xc72da2b97cce4447L, 0x8389f407dc1158b7L, 0xf979ba0450L).optional(true).origin("1169127628841").done();
     b.aggregate("INPUT_1", 0x599b1dd3d5b7da0dL).target(0x3173a0e936cc43a5L, 0xbf9917355f5ea8a0L, 0x1e34e6e4a1df22bfL).optional(true).ordered(true).multiple(true).origin("6456787286426638861").done();
+    b.kind(ConceptKind.INTERFACE, StaticScope.GLOBAL);
+    b.alias("0");
     return b.create();
   }
 }

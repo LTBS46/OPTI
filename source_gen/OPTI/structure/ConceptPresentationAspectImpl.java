@@ -20,6 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Input_field:
         if (props_Input_field == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("\"Champ de donnée\"");
           cpb.presentationByName();
           props_Input_field = cpb.create();
         }

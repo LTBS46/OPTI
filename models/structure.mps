@@ -6,6 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -97,15 +98,43 @@
     <property role="19KtqR" value="true" />
     <property role="R4oN_" value="&quot;Base_concept&quot;" />
     <property role="R5$K2" value="false" />
-    <property role="34LRSv" value="1" />
+    <property role="34LRSv" value="0" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="h0PrY0D" role="1TKVEi">
+      <property role="20kJfa" value="extends" />
+      <property role="20lbJX" value="0..1" />
+      <property role="IQ2ns" value="1169127628841" />
+      <ref role="20lvS9" to="tpce:f_TIwhg" resolve="ConceptDeclaration" />
+    </node>
+    <node concept="PrWs8" id="6$CrjIsx17B" role="PzmwI">
+      <ref role="PrY4T" to="tpck:19gBtYEAf4C" resolve="InterfacePart" />
+    </node>
     <node concept="PrWs8" id="1SOTIixRLxr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6$CrjIsxaw0" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="PrWs8" id="6$CrjIsxbAL" role="PzmwI">
+      <ref role="PrY4T" to="tpce:hOIDzy1" resolve="IStructureDeprecatable" />
+    </node>
+    <node concept="PrWs8" id="6$CrjIsxbA_" role="PzmwI">
+      <ref role="PrY4T" to="tpce:6OtXG9K2KUI" resolve="DocumentationObjective" />
+    </node>
+    <node concept="1TJgyi" id="6$CrjIsxau_" role="1TKVEl">
+      <property role="IQ2nx" value="7577426475847296933" />
+      <property role="TrG5h" value="rootable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyi" id="5Ar7tflHXC4" role="1TKVEl">
       <property role="IQ2nx" value="6456787286426638852" />
       <property role="TrG5h" value="P_type" />
       <ref role="AX2Wp" node="1SOTIixREVu" resolve="HARD_TYPE" />
+    </node>
+    <node concept="1TJgyi" id="6$CrjIsxauC" role="1TKVEl">
+      <property role="IQ2nx" value="7577426475847296936" />
+      <property role="TrG5h" value="iconpath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="5Ar7tflHXCd" role="1TKVEi">
       <property role="IQ2ns" value="6456787286426638861" />

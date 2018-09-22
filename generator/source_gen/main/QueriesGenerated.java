@@ -4,10 +4,55 @@ package main;
 
 import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.impl.query.QueryProviderBase;
+import jetbrains.mps.generator.template.MappingScriptContext;
+import java.util.Map;
+import jetbrains.mps.generator.impl.query.ScriptCodeBlock;
+import java.util.HashMap;
+import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.generator.impl.query.QueryKey;
+import jetbrains.mps.generator.impl.GenerationFailureException;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
   public QueriesGenerated() {
     super(1);
+  }
+  public static void mappingScript_CodeBlock_1(final MappingScriptContext _context) {
+  }
+  public static void mappingScript_CodeBlock_2(final MappingScriptContext _context) {
+  }
+  private final Map<String, ScriptCodeBlock> mscbMethods = new HashMap<String, ScriptCodeBlock>();
+  {
+    int i = 0;
+    mscbMethods.put("7577426475847321136", new QueriesGenerated.SCB(i++));
+    mscbMethods.put("7577426475847321155", new QueriesGenerated.SCB(i++));
+  }
+  @Override
+  @NotNull
+  public ScriptCodeBlock getScriptCodeBlock(@NotNull QueryKey identity) {
+    final String id = identity.getTemplateNode().getNodeId().toString();
+    if (!(mscbMethods.containsKey(id))) {
+      return super.getScriptCodeBlock(identity);
+    }
+    return mscbMethods.get(id);
+  }
+  private static class SCB implements ScriptCodeBlock {
+    private final int methodKey;
+    public SCB(int methodKey) {
+      this.methodKey = methodKey;
+    }
+    @Override
+    public void invoke(MappingScriptContext ctx) throws GenerationFailureException {
+      switch (methodKey) {
+        case 0:
+          QueriesGenerated.mappingScript_CodeBlock_1(ctx);
+          return;
+        case 1:
+          QueriesGenerated.mappingScript_CodeBlock_2(ctx);
+          return;
+        default:
+          throw new GenerationFailureException(String.format("There's no code block with method index %d ", methodKey));
+      }
+    }
   }
 }
